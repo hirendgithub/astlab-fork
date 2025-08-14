@@ -15,7 +15,7 @@ jobs:
       - name: Checkmarx AST CLI Action
         uses: Checkmarx/ast-github-action@2.0.23 #Github Action version
         with:
-          project_name: 'hirendgithub/astlab-fork'
+          project_name: ${{ github.repository }}
           cx_tenant: 'ps_hi_dhakan'
           base_uri: 'https://ind.ast.checkmarx.net/' 
           cx_client_id: ${{ secrets.CLIENT_ID }}
