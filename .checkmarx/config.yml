@@ -20,7 +20,7 @@ checkmarx:
          # configure if this specific project will be run incrementally or will it run a full scan 
         incremental: 'false'
         languageMode: 'multi'
-        filter: '!*.java,!*.cpp, !**/*test*/**, !**/*.Tests/**'
+        filter: '!**/*test*/**, !**/*.Tests/**'
         engineVerbose: 'true'
       sca:
         filter: '!*.cpp, !**/*test*/**, !**/*.Tests/**'
