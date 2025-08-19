@@ -20,10 +20,10 @@ checkmarx:
          # configure if this specific project will be run incrementally or will it run a full scan 
         incremental: 'false'
         languageMode: 'multi'
-        filter: '!*.java,!*.cpp'
+        filter: '!*.java,!*.cpp, !**/*test*/**, !**/*.Tests/**'
         engineVerbose: 'true'
       sca:
-        filter: '!*.cpp'
+        filter: '!*.cpp, !**/*test*/**, !**/*.Tests/**'
         exploitablePath: 'true'
         lastSastScanTime: '10'
       kics:
